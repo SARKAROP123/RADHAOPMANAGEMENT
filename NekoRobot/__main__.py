@@ -676,8 +676,8 @@ def migrate_chats(update: Update):
 
 
 def main():
-    test_handler = CommandHandler("test", test, run_async=True)
-    start_handler = CommandHandler("start", start, run_async=True)
+    test_handler = CommandHandler("test", test, run_async=False)
+    start_handler = CommandHandler("start", start, run_async=False)
 
     help_handler = CommandHandler("help", get_help, run_async=True)
     help_callback_handler = CallbackQueryHandler(
